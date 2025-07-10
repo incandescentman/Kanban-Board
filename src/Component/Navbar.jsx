@@ -18,17 +18,17 @@ import { BiFilterAlt } from "react-icons/bi";
 
 const Navbar = () => {
   const location = useLocation();
-  
+
   const getProjectTitle = () => {
     switch (location.pathname) {
-      case "/mobile_app":
-        return "Mobile App";
-      case "/website_redesign":
-        return "Website Redesign";
-      case "/system":
-        return "Design System";
-      case "/wireframe":
-        return "Wireframes";
+      case "/1":
+        return "Substack and Writing";
+      case "/2":
+        return "AI Jobs";
+      case "/3":
+        return "Academic Jobs";
+      case "/4":
+        return "Other";
       default:
         return "Dashboard";
     }
@@ -143,7 +143,7 @@ const Navbar = () => {
 
       <ul className="my-2 grid w-full gap-3 md:grid-cols-2 px-8">
         <li className=" flex items-center m-2 justify-start gap-4 h-full">
-          <p className="font-semibold text-2xl lg:text-[46px] leading-14 text-capitalize text-[#0D062D]">
+          <p className="font-semibold text-2xl lg:text-[46px] leading-16 text-capitalize text-[#0D062D]">
             {getProjectTitle()}
           </p>
           <img src={Arrowsquareup} alt="arrowsquareup" />

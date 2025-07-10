@@ -19,24 +19,24 @@ const ProjectBoard = ({ projectId }) => {
       try {
         setLoading(true);
         let projectData;
-        
+
         switch (projectId) {
-          case "mobile_app":
-            projectData = await import("../data/mobile-app.json");
+          case "1":
+            projectData = await import("../data/1.json");
             break;
-          case "website_redesign":
-            projectData = await import("../data/website-redesign.json");
+          case "2":
+            projectData = await import("../data/2.json");
             break;
-          case "system":
-            projectData = await import("../data/design-system.json");
+          case "3":
+            projectData = await import("../data/3.json");
             break;
-          case "wireframe":
-            projectData = await import("../data/wireframes.json");
+          case "4":
+            projectData = await import("../data/4.json");
             break;
           default:
             projectData = await import("../data/board.json");
         }
-        
+
         setBoardData(projectData.default);
         setLoading(false);
       } catch (error) {
@@ -85,7 +85,7 @@ const ProjectBoard = ({ projectId }) => {
                     <div {...provided.droppableProps} ref={provided.innerRef}>
                       <div
                         className={`bg-[#F5F5F5] rounded-t-lg shadow-md h-[108vh]
-                        flex flex-col relative overflow-hidden pb-3 px-2 
+                        flex flex-col relative overflow-hidden pb-3 px-2
                         ${snapshot.isDraggingOver && "bg-green-100"}`}
                       >
                         <div className="px-3 mt-5 flex gap-2 items-center justify-between">

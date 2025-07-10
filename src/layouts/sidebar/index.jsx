@@ -5,11 +5,6 @@ import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 import { MdMenu } from "react-icons/md";
 import { NavLink, useLocation } from "react-router-dom";
-import Homelog from "../../svg/home.svg";
-import Memebers from "../../svg/members.png";
-import Task from "../../svg/task.png";
-import Setting from "../../svg/setting.png";
-import Message from "../../svg/message.png";
 import AddSquare from "../../svg/addsquare.svg";
 import Lamp from "../../svg/lamp.svg";
 import MySvg from "../../svg/colorfilter.svg";
@@ -91,7 +86,7 @@ const Sidebar = () => {
           >
             <img src={MySvg} width={24} height={24} alt="logo" />
             <span className="whitespace-pre font-inter font-semibold text-[20px] leading-6 text-purple-900">
-              Project M.
+              Post-OpenAI Plan
             </span>
           </div>
 
@@ -125,51 +120,8 @@ const Sidebar = () => {
         </div>
 
         <div className="flex flex-col">
-          <ul className="whitespace-pre px-2.5 text-[0.9rem] py-5 flex flex-col gap-1 overflow-x-hidden">
-            <li>
-              <NavLink to={"/"} className="link font-inter text-base leading-5">
-                <img src={Homelog} w="24px" h="24px" alt="home" />
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to={"/message"}
-                className="link font-inter text-base leading-5"
-              >
-                <img src={Message} w="24px" h="24px" alt="home" />
-                Messages
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to={"/task"}
-                className="link font-inter text-base leading-5"
-              >
-                <img src={Task} w="24px" h="24px" alt="home" />
-                Tasks
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to={"/members"}
-                className="link font-inter text-base leading-5"
-              >
-                <img src={Memebers} w="24px" h="24px" alt="home" />
-                Members
-              </NavLink>
-              <li className="mb-3">
-                <NavLink
-                  to={"/setting"}
-                  className="link font-inter text-base leading-5"
-                >
-                  <img src={Setting} w="24px" h="24px" alt="home" />
-                  Setting
-                </NavLink>
-              </li>
-            </li>
-            {(open || isTabletMid) && (
-              <div className=" py-5 border-t border-[#DBDBDB]">
+          {(open || isTabletMid) && (
+            <div className="py-5 px-2.5">
                 <div className="flex items-center justify-between gap-2.5">
                   <small className="capitalize pl-3 text-slate-500 inline-block mb-2 font-bold text-[12px]">
                     my projects
@@ -179,38 +131,39 @@ const Sidebar = () => {
                 <div className="flex flex-col">
                   <ul className="whitespace-pre px-2 py-5 flex flex-col font-medium">
                     <NavLink
-                      to={"/mobile_app"}
+                      to={"/1"}
                       className="w-full mb-1 py-3 px-2 flex flex-row items-center gap-5"
                     >
                       <p className="bg-[#7AC555] rounded-full w-[8px] h-[8px]"></p>
-                      <p> Mobile App</p>
+                      <p> Substack and Writing</p>
                     </NavLink>
                     <NavLink
-                      to={"/website_redesign"}
+                      to={"/2"}
                       className="w-full mb-1 py-3 px-2 flex flex-row  items-center gap-5 "
                     >
                       <p className="bg-[#FFA500] rounded-full w-[8px] h-[8px]"></p>
-                      <p> Website Redesign</p>
+                      <p> AI Job Hunt</p>
                     </NavLink>
                     <NavLink
-                      to={"/system"}
+                      to={"/3"}
                       className="w-full mb-1 py-3 px-2 flex flex-row  items-center gap-5 "
                     >
                       <p className="bg-[#E4CCFD] rounded-full w-[8px] h-[8px]"></p>
-                      <p> Design System</p>
+                      <p> Academic Job Hunt</p>
                     </NavLink>
                     <NavLink
-                      to={"/wireframe"}
+                      to={"/4"}
                       className="w-full mb-1 py-3 px-2 flex flex-row  items-center gap-5 "
                     >
                       <p className="bg-[#76A5EA] rounded-full w-[8px] h-[8px]"></p>
-                      <p> Wireframes</p>
+                      <p>Other</p>
                     </NavLink>
                   </ul>
                 </div>
               </div>
-            )}
-          </ul>
+
+
+          )}
         </div>
 
         {(open || isTabletMid) && (

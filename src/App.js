@@ -12,10 +12,10 @@ const App = () => {
       <RootLayout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/mobile_app" element={<ProjectBoard projectId="mobile_app" />} />
-          <Route path="/website_redesign" element={<ProjectBoard projectId="website_redesign" />} />
-          <Route path="/system" element={<ProjectBoard projectId="system" />} />
-          <Route path="/wireframe" element={<ProjectBoard projectId="wireframe" />} />
+          <Route path="/1" element={<ProjectBoard projectId="1" />} />
+          <Route path="/2" element={<ProjectBoard projectId="2" />} />
+          <Route path="/3" element={<ProjectBoard projectId="3" />} />
+          <Route path="/4" element={<ProjectBoard projectId="4" />} />
           <Route
             path="/*"
             element={<Message routeName={location.pathname} />}
