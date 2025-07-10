@@ -1,0 +1,60 @@
+[
+  {
+    "name": "To Do",
+    "items": [
+      {
+        "id": 1,
+        "priority": 0,
+        "title": "User Authentication",
+        "desc": "Implement login and registration functionality with social media integration."
+      },
+      {
+        "id": 2,
+        "priority": 1,
+        "title": "Push Notifications",
+        "desc": "Set up push notification system for user engagement and updates."
+      },
+      {
+        "id": 3,
+        "priority": 1,
+        "title": "Offline Mode",
+        "desc": "Enable core app functionality when device is offline."
+      }
+    ]
+  },
+  {
+    "name": "On Progress",
+    "items": [
+      {
+        "id": 4,
+        "priority": 0,
+        "title": "UI Components Library",
+        "img": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "id": 5,
+        "priority": 0,
+        "title": "Navigation System",
+        "desc": "Implementing tab navigation and deep linking for mobile app."
+      }
+    ]
+  },
+  {
+    "name": "Done",
+    "items": [
+      {
+        "id": 6,
+        "priority": 2,
+        "title": "Splash Screen",
+        "files": 3,
+        "img": "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "id": 7,
+        "priority": 2,
+        "title": "App Icons & Branding",
+        "desc": "Completed app icon design and brand guidelines implementation."
+      }
+    ]
+  }
+]

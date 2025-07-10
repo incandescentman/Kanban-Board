@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import Search from "../svg/search.svg";
 import Notifi from "../svg/notification.svg";
 import Message from "../svg/messagequ.svg";
@@ -16,6 +17,23 @@ import { IoIosArrowDown } from "react-icons/io";
 import { BiFilterAlt } from "react-icons/bi";
 
 const Navbar = () => {
+  const location = useLocation();
+  
+  const getProjectTitle = () => {
+    switch (location.pathname) {
+      case "/mobile_app":
+        return "Mobile App";
+      case "/website_redesign":
+        return "Website Redesign";
+      case "/system":
+        return "Design System";
+      case "/wireframe":
+        return "Wireframes";
+      default:
+        return "Dashboard";
+    }
+  };
+
   return (
     <>
       <nav className="bg-white border-[#DBDBDB] border-b md:px-4">
@@ -126,45 +144,12 @@ const Navbar = () => {
       <ul className="my-2 grid w-full gap-3 md:grid-cols-2 px-8">
         <li className=" flex items-center m-2 justify-start gap-4 h-full">
           <p className="font-semibold text-2xl lg:text-[46px] leading-14 text-capitalize text-[#0D062D]">
-            Mobile App
+            {getProjectTitle()}
           </p>
           <img src={Arrowsquareup} alt="arrowsquareup" />
           <img src={Attach} alt="attach" />
         </li>
         <li className="flex items-center m-2  gap-4 h-full lg:justify-end sm:justify-start ">
-          <img src={Addsquare1} alt="attach" />
-          <p className="font-medium text-base leading-5 capitalize text-purple-600">
-            invite
-          </p>
-
-          <div className="flex -space-x-3">
-            <img
-              className="w-10 h-10 object-cover border-2 border-white rounded-full dark:border-gray-800"
-              src="https://flowbite.com/docs/images/people/profile-picture-4.jpg"
-              alt=""
-            />
-            <img
-              className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-              src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-              alt=""
-            />
-            <img
-              className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-              src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
-              alt=""
-            />
-            <img
-              className="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800"
-              src="https://flowbite.com/docs/images/people/profile-picture-1.jpg"
-              alt=""
-            />
-            <button
-              type="button"
-              className="flex items-center justify-center w-10 h-10 text-xs font-medium text-[#D25B68] bg-[#F4D7DA] border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800"
-            >
-              +2
-            </button>
-          </div>
         </li>
       </ul>
 

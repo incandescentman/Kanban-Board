@@ -1,0 +1,60 @@
+[
+  {
+    "name": "To Do",
+    "items": [
+      {
+        "id": 31,
+        "priority": 0,
+        "title": "User Flow Diagrams",
+        "desc": "Create detailed user journey maps and interaction flows."
+      },
+      {
+        "id": 32,
+        "priority": 1,
+        "title": "Admin Dashboard",
+        "desc": "Wireframe complex admin interface with data visualization components."
+      },
+      {
+        "id": 33,
+        "priority": 1,
+        "title": "Mobile Wireframes",
+        "desc": "Design mobile-first wireframes for responsive layouts."
+      }
+    ]
+  },
+  {
+    "name": "On Progress",
+    "items": [
+      {
+        "id": 34,
+        "priority": 0,
+        "title": "Homepage Structure",
+        "img": "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "id": 35,
+        "priority": 0,
+        "title": "Navigation Layout",
+        "desc": "Designing intuitive navigation patterns and menu structures."
+      }
+    ]
+  },
+  {
+    "name": "Done",
+    "items": [
+      {
+        "id": 36,
+        "priority": 2,
+        "title": "Low-Fi Prototypes",
+        "files": 25,
+        "img": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "id": 37,
+        "priority": 2,
+        "title": "Information Architecture",
+        "desc": "Completed site map and content organization structure."
+      }
+    ]
+  }
+]

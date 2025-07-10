@@ -1,0 +1,60 @@
+[
+  {
+    "name": "To Do",
+    "items": [
+      {
+        "id": 21,
+        "priority": 0,
+        "title": "Animation Guidelines",
+        "desc": "Define motion principles and animation standards for consistent user experience."
+      },
+      {
+        "id": 22,
+        "priority": 1,
+        "title": "Accessibility Standards",
+        "desc": "Establish WCAG compliance guidelines and accessibility testing procedures."
+      },
+      {
+        "id": 23,
+        "priority": 1,
+        "title": "Documentation Site",
+        "desc": "Create comprehensive documentation website for the design system."
+      }
+    ]
+  },
+  {
+    "name": "On Progress",
+    "items": [
+      {
+        "id": 24,
+        "priority": 0,
+        "title": "Component Library",
+        "img": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "id": 25,
+        "priority": 0,
+        "title": "Icon System",
+        "desc": "Creating scalable icon set with consistent visual language."
+      }
+    ]
+  },
+  {
+    "name": "Done",
+    "items": [
+      {
+        "id": 26,
+        "priority": 2,
+        "title": "Design Tokens",
+        "files": 12,
+        "img": "https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "id": 27,
+        "priority": 2,
+        "title": "Style Guide",
+        "desc": "Comprehensive style guide with color palette, spacing, and typography rules."
+      }
+    ]
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "name": "To Do",
+    "items": [
+      {
+        "id": 11,
+        "priority": 0,
+        "title": "SEO Optimization",
+        "desc": "Implement meta tags, structured data, and performance optimizations."
+      },
+      {
+        "id": 12,
+        "priority": 1,
+        "title": "Contact Form",
+        "desc": "Create responsive contact form with validation and email integration."
+      },
+      {
+        "id": 13,
+        "priority": 1,
+        "title": "Blog Section",
+        "desc": "Design and develop blog layout with CMS integration."
+      }
+    ]
+  },
+  {
+    "name": "On Progress",
+    "items": [
+      {
+        "id": 14,
+        "priority": 0,
+        "title": "Homepage Layout",
+        "img": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "id": 15,
+        "priority": 0,
+        "title": "Responsive Design",
+        "desc": "Ensuring website works perfectly across all device sizes."
+      }
+    ]
+  },
+  {
+    "name": "Done",
+    "items": [
+      {
+        "id": 16,
+        "priority": 2,
+        "title": "Color Scheme",
+        "files": 8,
+        "img": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      },
+      {
+        "id": 17,
+        "priority": 2,
+        "title": "Typography System",
+        "desc": "Selected and implemented consistent typography across the website."
+      }
+    ]
+  }
+]
