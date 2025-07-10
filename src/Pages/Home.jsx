@@ -53,7 +53,7 @@ const Home = () => {
                               className={`${
                                 board.name === "To Do"
                                   ? "bg-[#5030E5]"
-                                  : board.name === "On Progress"
+                                  : board.name === "In Progress"
                                   ? "bg-[#FFA500]"
                                   : "bg-[#76A5EA]"
                               } rounded-full w-[8px] h-[8px]`}
@@ -73,7 +73,7 @@ const Home = () => {
                           className={`${
                             board.name === "To Do"
                               ? "bg-[#5030E5]"
-                              : board.name === "On Progress"
+                              : board.name === "In Progress"
                               ? "bg-[#FFA500]"
                               : "bg-[#8BC48A]"
                           } w-100 h-[3px] my-5`}
