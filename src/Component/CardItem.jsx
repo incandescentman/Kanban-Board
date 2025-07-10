@@ -2,7 +2,6 @@ import React from "react";
 
 import { Draggable } from "react-beautiful-dnd";
 import { BsThreeDots } from "react-icons/bs";
-import Message from "../svg/message.svg";
 import Files from "../svg/files.svg";
 
 function CardItem({ data, index }) {
@@ -50,25 +49,6 @@ function CardItem({ data, index }) {
           )}
           <div>
             <ul className="flex space-x-3 justify-between">
-              <li>
-                <div className="-space-x-2">
-                  {data?.assignees.map((el, index) => {
-                    return (
-                      <img
-                        key={index}
-                        className="relative z-30 inline object-cover w-[24px] h-[24px] border-2 border-white rounded-full"
-                        src={el}
-                        alt="Profileimage"
-                      />
-                    );
-                  })}
-                </div>
-              </li>
-              <li className="flex items-center gap-1 font-medium text-[#787486]	text-[12px]">
-                <img src={Message} w="13px" h="13px" alt="home" />
-                <span>{data.comments}</span>
-                comments
-              </li>
               <li className="flex items-center gap-1 font-medium text-[#787486]	text-[12px]">
                 <img src={Files} w="13px" h="13px" alt="home" />
                 <span>{data.files}</span>
