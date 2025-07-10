@@ -93,7 +93,7 @@ const Navbar = () => {
               <img
                 className="w-8 h-8 rounded-full object-cover"
                 src={Profile}
-                alt="user photo"
+                alt="Anima Agrawal profile"
               />
             </button>
             <div className="m-2">
@@ -110,12 +110,12 @@ const Navbar = () => {
               </div>
               <ul className="py-2" aria-labelledby="user-menu-button">
                 <li>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  <button
+                    type="button"
+                    className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                   >
                     Dashboard
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>
@@ -158,12 +158,12 @@ const Navbar = () => {
               src="https://flowbite.com/docs/images/people/profile-picture-1.jpg"
               alt=""
             />
-            <a
+            <button
+              type="button"
               className="flex items-center justify-center w-10 h-10 text-xs font-medium text-[#D25B68] bg-[#F4D7DA] border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800"
-              href="#"
             >
               +2
-            </a>
+            </button>
           </div>
         </li>
       </ul>

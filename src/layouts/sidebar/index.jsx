@@ -31,7 +31,7 @@ const Sidebar = () => {
 
   useEffect(() => {
     isTabletMid && setOpen(false);
-  }, [pathname]);
+  }, [pathname, isTabletMid]);
 
   const Nav_animation = isTabletMid
     ? {
