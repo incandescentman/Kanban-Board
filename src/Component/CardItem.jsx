@@ -2,7 +2,7 @@ import React from "react";
 
 import { Draggable } from "react-beautiful-dnd";
 import { BsThreeDots } from "react-icons/bs";
-import Files from "../svg/files.svg";
+
 
 function CardItem({ data, index }) {
   return (
@@ -47,15 +47,7 @@ function CardItem({ data, index }) {
               className="my-3 h-full w-full"
             />
           )}
-          <div>
-            <ul className="flex space-x-3 justify-between">
-              <li className="flex items-center gap-1 font-medium text-[#787486]	text-[12px]">
-                <img src={Files} w="13px" h="13px" alt="home" />
-                <span>{data.files}</span>
-                files
-              </li>
-            </ul>
-          </div>
+  
         </div>
       )}
     </Draggable>
