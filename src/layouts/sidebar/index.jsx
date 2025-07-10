@@ -135,7 +135,7 @@ const Sidebar = () => {
                       className="w-full mb-1 py-3 px-2 flex flex-row items-center gap-5"
                     >
                       <p className="bg-[#7AC555] rounded-full w-[8px] h-[8px]"></p>
-                      <p> Substack and Writing</p>
+                      <p > July Tasks</p>
                     </NavLink>
                     <NavLink
                       to={"/2"}
@@ -156,7 +156,7 @@ const Sidebar = () => {
                       className="w-full mb-1 py-3 px-2 flex flex-row  items-center gap-5 "
                     >
                       <p className="bg-[#76A5EA] rounded-full w-[8px] h-[8px]"></p>
-                      <p>Other</p>
+                      <p>Substack and Writing</p>
                     </NavLink>
                   </ul>
                 </div>

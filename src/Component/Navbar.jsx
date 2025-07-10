@@ -11,7 +11,7 @@ import Calenderdark from "../svg/calda.svg";
 import Profileuser from "../svg/profileuser.svg";
 import Fourwheel from "../svg/fourwheel.svg";
 import Barbtn from "../svg/barbutton.svg";
-import Profile from "../svg/profile.svg";
+import Profile from "../svg/jay-dixit_120.png";
 
 import { IoIosArrowDown } from "react-icons/io";
 import { BiFilterAlt } from "react-icons/bi";
@@ -22,13 +22,13 @@ const Navbar = () => {
   const getProjectTitle = () => {
     switch (location.pathname) {
       case "/1":
-        return "Substack and Writing";
+        return "July Tasks";
       case "/2":
         return "AI Jobs";
       case "/3":
         return "Academic Jobs";
       case "/4":
-        return "Other";
+        return "Substack and Writing";
       default:
         return "Dashboard";
     }
@@ -93,10 +93,10 @@ const Navbar = () => {
             </div>
             <div className="m-2">
               <p className="font-normal	text-base leading-5 text-right text-[#0D062D]">
-                Anima Agrawal
+                Jay Dixit
               </p>
               <p className="font-normal text-[14px] leading-4 text-right text-[#787486]">
-                U.P, India
+                Socratic AI
               </p>
             </div>
             <button
@@ -111,7 +111,7 @@ const Navbar = () => {
               <img
                 className="w-8 h-8 rounded-full object-cover"
                 src={Profile}
-                alt="Anima Agrawal profile"
+                alt="Jay Dixit profile"
               />
             </button>
             <div className="m-2">
@@ -143,7 +143,7 @@ const Navbar = () => {
 
       <ul className="my-2 grid w-full gap-3 md:grid-cols-2 px-8">
         <li className=" flex items-center m-2 justify-start gap-4 h-full">
-          <p className="font-semibold text-2xl lg:text-[46px] leading-16 text-capitalize text-[#0D062D]">
+          <p className="font-semibold text-2xl lg:text-[46px] leading-none text-capitalize text-[#0D062D]">
             {getProjectTitle()}
           </p>
           <img src={Arrowsquareup} alt="arrowsquareup" />
